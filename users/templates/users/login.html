@@ -5,6 +5,8 @@
 {% block section %}
 <form method="post">
     {% csrf_token %}
+
+    <!--{% login_form.as_p %}-->
     <div>
         <input type="text" name="usr" placeholder="Nombre de Usuario">
     </div>

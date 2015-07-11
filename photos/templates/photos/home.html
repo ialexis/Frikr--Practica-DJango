@@ -9,7 +9,7 @@
 
         <h2>ultimas fotos publicadas</h2>
         {% for photo in photos_list %}
-            <a href="{% url 'photos_home' photo.pk %}">
+            <a href="{% url 'photo_detail' photo.pk %}">
                 <img src="{{photo.url}}" alt=" {{ photo.name}}" height="150">
             </a>
         {% endfor %}
